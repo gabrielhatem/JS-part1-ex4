@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+    <form>
+        <label for="lastname">Nom : </label><input type="text" name="lastname" id="lastname" />
+        <label for="firstname">Prénom : </label><input type="text" name="firstname" id="firstname" />
+        <label for="city">Ville : </label><input type="text" name="city" id="city" />
+        <button onclick="myFunction()" name="submit" id="submit">Valider</button>
+    </form>
+
+
+    <script>
+        function myFunction() {
+            let lastName = document.getElementById("lastname").value;
+            let FirstName = document.getElementById("firstname").value;
+            let city = document.getElementById("city").value;
+            alert('Nom : ' + lastName + "\nPrénom : " + FirstName + "\nVille : " + city);
+        }
+
+    </script>
+
+</body>
+
+</html>
